@@ -16,7 +16,6 @@ var io             = require('socket.io');
 var port = process.env.PORT || 8080; // set our port
 
 app.use(express.static(__dirname + './../client/src'));
-app.use(require('connect-logger')());
 app.use(bodyParser());
 app.use(methodOverride('X-HTTP-Method-Override'))
 
